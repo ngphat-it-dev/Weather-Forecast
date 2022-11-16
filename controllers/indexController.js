@@ -9,8 +9,7 @@ let getData = async (req, res) => {
 };
 
 let data = (req, res) => {
-  console.log(req.params.location);
-  res.render("index");
+  res.render("index", { title: "Weather" });
 };
 
 module.exports = { data, getData };
